@@ -36,6 +36,7 @@ public class createRecipt : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("fileContent", content);
         form.AddField("fileName", filename);
+
         
         // Upload to a cgi script
         WWW w = new WWW(url, form);
