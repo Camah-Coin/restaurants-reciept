@@ -29,7 +29,7 @@ public class createRecipt : MonoBehaviour
         string url = "https://www.swiftpos.com.au";
 
         // TODO: Obtain name and content of the file you want to upload
-        string filename = "hello.text";
+        string filename = "hello.text"; // Text you made
         string content = "Hello World";
 
         // Create a Web Form
@@ -37,7 +37,6 @@ public class createRecipt : MonoBehaviour
         form.AddField("fileContent", content);
         form.AddField("fileName", filename);
 
-        
         // Upload to a cgi script
         WWW w = new WWW(url, form);
         yield return w;
